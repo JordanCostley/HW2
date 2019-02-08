@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Montserrat-Regular;
+    font-weight: 100;
+    src: url('Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    font-weight: 100;
+    src: url('Montserrat-SemiBold.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size:100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+#shell {
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(72, 160, 243, 0.8);
+}
+#header h1 {
+    font-family: Montserrat-SemiBold,sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+}
+#contentShell {
+    width: 100%;
+}
+#contentMain {
+    width: 60%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vh;
+}
+#contentBox {
+    background-color: #2b2b2b2b;
+    width: 75%;
+    height: 75%;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contentBox h1 {
+    font-family: Montserrat-SemiBold,sans-serif;
+    color: #0e0e0e;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+#contentBoxLower {
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+#contentBLItems {
+    padding-top: 75px;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+#contentBLItems h2 {
+    font-family: Montserrat-Regular,sans-serif;
+    display: inline;    
+}
+input {
+    background-color: rgb(226, 226, 226);
+    width: 125px;
+    border-style: solid;
+    border-width: .5px;
+    border-color: rgba(0, 0, 0, 0.315);
+    border-radius: 2px;
+}
+#contentSubmit {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#submitButton {
+    font-family: Montserrat-Regular,sans-serif;
+    text-align: center;
+    width: 150px;
+    background-color: rgb(100, 194, 97);
+    border-radius: 10px;
+    height: 30px;
+}
+#submitButton:hover {
+    cursor: pointer;
+    background-color: rgba(72, 160, 243, 0.8);  
+}

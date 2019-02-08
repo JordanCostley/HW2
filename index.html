@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <title>Jordan Bank</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="shell">
+        <div id="header">
+            <h1>The Bank of Jordan</h1>
+        </div>
+        <div id="contentShell">
+            <div id="contentMain">
+                <div id="contentBox">
+                    <h1>Welcome, please input info below.</h1>
+                    <div id="contentBoxLower">
+                        <div id="contentBLItems">
+                            <h2>Birth Year:</h2>
+                            <input id="birthday" type="number">
+                            <h2>Shoe Size:</h2>
+                            <input id="shoeSize" type="number">
+                        </div>
+                        <div id="contentSubmit">
+                                <button id="submitButton" type="button" name="Calculate" onclick="submit()">Submit</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function submit()
+    {
+        var birthdayValue = document.getElementById('birthday').value;
+        var shoeValue = document.getElementById('shoeSize').value;
+        var inputTotalValue = birthdayValue + shoeValue;
+        alert(inputTotalValue);
+    }
+    </script>
+</body>
